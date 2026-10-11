@@ -1,0 +1,8 @@
+sensor,software_source_field,current_sketch_availability,reference_needed,notes
+mq5,mq5_raw,available,gas-specific reference instrument,Raw ADC only; choose the target gas before creating an output field
+mq7,mq7_raw,legacy mq9_raw remapped in Python,CO reference instrument,Existing A1 packet uses legacy compact key g9; adapter assumes A1 is physically MQ-7
+DHT11,ambient_temp_c and humidity_pct,available,reference thermometer and hygrometer,Digital measurements; software reference correction applies to reported values not raw ADC
+GP2Y1010AU0F,gp2y_raw_adc,not emitted,reference PM instrument,Current Mega sketch PM reader is a placeholder and emits no PM data
+MAX30102,heart_rate_bpm and spo2_pct,derived values available,validated reference monitor,Current worker sketch does not transmit raw red/IR PPG samples; calibration is only of reported estimates
+ADXL345,accel_g and accel_min_g summaries available,derived summary available,known orientation/acceleration reference,Current worker sketch does not transmit raw 3-axis samples
+NTC thermistor,ntc_skin_temp_c,derived temperature available,reference thermometer and actual thermistor/divider details,Current worker sketch does not transmit raw ADC or resistance

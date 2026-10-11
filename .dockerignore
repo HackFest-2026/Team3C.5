@@ -1,0 +1,13 @@
+__pycache__
+*.py[cod]
+.venv
+core.db
+edge_buffer.db
+*.db-wal
+*.db-shm
+models/
+private/
+secrets/
+.env
+service-account*.json
+uploads/
